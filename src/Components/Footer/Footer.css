@@ -1,0 +1,38 @@
+footer{
+    margin-left: 40px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    gap: 50px;
+    padding: 1.5em 0;
+}
+.pad{
+    background: #393b49;
+}
+.gray{
+    color: #94a4b4;
+}
+.info{
+    display: flex;
+    gap: 50px;
+}
+@media screen and (max-width:790px) {
+    footer{
+        flex-direction: column;
+        gap: 5px;
+    }
+    
+    
+}
+@media screen and (max-width:490px) {
+    footer{
+        margin-left: 10px;
+    }
+    .info{
+        flex-direction: column;
+        gap: 5px;
+    }
+    
+    
+}
