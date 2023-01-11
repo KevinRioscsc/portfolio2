@@ -50,7 +50,7 @@ const ContactMe = () => {
               name="message"
             />
 
-            <span className="button">
+            <span className="button" style={{ margin: "0 0 205px 0px" }}>
               <input className="btn" type="submit" value="Send" />
             </span>
           </form>
