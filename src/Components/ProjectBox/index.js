@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Project, Overlay, BtnView } from "./Box";
 import { AiFillEye } from "react-icons/ai";
 import Modal from "./Modal";
@@ -14,6 +14,10 @@ const ProjectBox = ({ ...props }) => {
     projectImg,
   } = props;
   const [toggle, setToggle] = useState(false);
+  useEffect(() => {
+    console.log("we loaded");
+  }, []);
+
   return (
     <>
       <Project>
@@ -24,17 +28,17 @@ const ProjectBox = ({ ...props }) => {
             VIEW PROJECT
           </BtnView>
         </Overlay>
+        <Modal
+          gif={gif}
+          setToggle={setToggle}
+          demo={projectLive}
+          code={projectSource}
+          technology={technologies}
+          name={projectName}
+          summary={projectDesc}
+          toggle={toggle}
+        />
       </Project>
-      <Modal
-        gif={gif}
-        setToggle={setToggle}
-        demo={projectLive}
-        code={projectSource}
-        technology={technologies}
-        name={projectName}
-        summary={projectDesc}
-        toggle={toggle}
-      />
     </>
   );
 };

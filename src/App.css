@@ -1,24 +1,24 @@
-#id{
+#id {
   padding: 1.5rem;
   position: relative;
   min-height: 100%;
 }
-.logo{
+.logo {
   display: inline-block;
 }
-.block{
+.block {
   display: block;
   color: #fff;
   font-size: 1.2rem;
   width: 100%;
   padding: 1.2rem;
-  -webkit-transition: all .45s cubic-bezier(.175,.885,.32,1.275);
-  transition: all .45s cubic-bezier(.175,.885,.32,1.275);
+  -webkit-transition: all 0.45s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: all 0.45s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   text-decoration: none;
   display: flex;
-  align-items:center;  
+  align-items: center;
 }
-.block:hover{
+.block:hover {
   transform: translateX(50%);
 }
 .contact__label {
@@ -32,28 +32,27 @@
   text-transform: uppercase;
 }
 @media screen and (max-width: 1100px) {
-    .contact__label{
-      font-size: 1rem;
-    }
-    .svg{
-      height: 20px;
-      width: 20px;
-    }
+  .contact__label {
+    font-size: 1rem;
+  }
+  .svg {
+    height: 20px;
+    width: 20px;
+  }
 }
-.linkedin{
- 
+.linkedin {
   background-color: #0077b5;
 }
-.github{
+.github {
   background-color: #333;
 }
-.email{
+.email {
   background-color: #6fc2b0;
 }
-.resume{
+.resume {
   background-color: #6fc2b0;
 }
-.white{
+.white {
   color: white;
 }
 .main {
@@ -61,36 +60,36 @@
   margin: 0 auto;
   margin-bottom: 8rem;
 }
-@media screen and (max-width:1230px ) {
-    .main{
-      width: 85%;
-    }
+@media screen and (max-width: 1230px) {
+  .main {
+    width: 85%;
+  }
 }
-.second-header{
+.second-header {
   color: white;
   font-size: 4.2rem;
 }
-.secondary-sub{
+.secondary-sub {
   color: #94a4b4;
   font-size: 1.4em;
 }
-.space{
+.space {
   width: 100%;
   margin-top: 40px;
-  
 }
-.flex{
-  display: flex;
- flex-wrap: wrap;
-  gap: 40px;
-
- 
+.flex {
+  display: grid;
+  margin: 0 auto;
+  max-width: 100%;
+  gap: 2em;
 }
-@media screen and (max-width:1480px) {
-  .flex{
-   
+@media (min-width: 980px) {
+  .flex {
+    grid-template-columns: repeat(2, 1fr);
   }
-
 }
-
-
+@media (min-width: 1900px) {
+  .flex {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

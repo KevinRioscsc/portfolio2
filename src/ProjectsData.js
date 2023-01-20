@@ -32,9 +32,6 @@ export const projects = [
     projectSource: "https://github.com/KevinRioscsc/quest-board",
     technologies: [
       "REACT",
-      "RESPONSIVE",
-      "CSS",
-      "HTML",
       "SQL",
       "UI/UX",
       "POSTGRES",
@@ -54,7 +51,7 @@ export const projects = [
     projectSource: "https://github.com/KevinRioscsc/Crypto-Info-App",
     technologies: [
       "REACT",
-      "RESPONSIVE",
+
       "CSS",
       "HTML",
       "RAPID API",
