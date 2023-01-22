@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Project, Overlay, BtnView } from "./Box";
 import { AiFillEye } from "react-icons/ai";
 import Modal from "./Modal";
-
+//
 const ProjectBox = ({ ...props }) => {
   const {
     gif,
@@ -21,7 +21,12 @@ const ProjectBox = ({ ...props }) => {
   return (
     <>
       <Project>
-        <img src={projectImg} style={{ width: "100%" }} alt="" />
+        <img
+          src={projectImg}
+          style={{ width: "100%" }}
+          alt=""
+          loading="eager"
+        />
         <Overlay>
           <BtnView onClick={() => setToggle(!toggle)}>
             <AiFillEye />
