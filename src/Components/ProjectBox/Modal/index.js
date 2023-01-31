@@ -37,12 +37,15 @@ const Modal = ({
             <ImCross size={20} color="#94a4b4" />
           </Close>
           <Left>
-            <iframe
+            <video
               src={gif}
               width="100%"
               height="100%"
+              autoPlay
+              muted
+              loop
               frameBorder="0"
-            ></iframe>
+            ></video>
           </Left>
           <Right>
             <ProjectLabel>Project</ProjectLabel>

@@ -1,6 +1,10 @@
-import Funk from "./Components/Images/theFunk.png";
-import Frend from "./Components/Images/Frend2.png";
-import Genie from "./Components/Images/Genie.png";
+import Funk from "./Components/Images/ecomm.png";
+import eCommerce from "./Videos/eCommerce.mp4";
+import demo from "./Videos/Demo.mp4";
+import quest from "./Videos/quest.mp4";
+import crypto from "./Videos/crypto.mp4";
+import KimoWeb from "./Videos/Kimo Gif.mp4";
+import Genie from "./Components/Images/GOL.png";
 import Kimo from "./Components/Images/Kimo.png";
 import Quest from "./Components/Images/questFinal.png";
 import Chain from "./Components/Images/blocky.png";
@@ -21,7 +25,7 @@ export const projects = [
       "Google Maps API",
       "UI/UX",
     ],
-    gif: "https://giphy.com/embed/lZp4j8Qy3UiWi2kI5U",
+    gif: KimoWeb,
   },
   {
     projectName: "Quest",
@@ -40,14 +44,14 @@ export const projects = [
       "KNEX",
       "FIREBASE",
     ],
-    gif: "https://giphy.com/embed/sVMfhjj0QKTdfsTPcw",
+    gif: quest,
   },
   {
     projectName: "BlockChain",
     projectDesc:
       "Blockchain has all the information you need to become a cryptocurrency guru. Blockchain gives you every bit of information of every cryptocurrency in the world. Using the CryptoCurrency API BlockChain allows you to see every bit of information, and current real time news of every cryptocurrency and exchange",
     projectImg: Chain,
-    projectLive: "https://blockchain--crypto.herokuapp.com",
+    projectLive: "https://block-chain-app.netlify.app",
     projectSource: "https://github.com/KevinRioscsc/Crypto-Info-App",
     technologies: [
       "REACT",
@@ -59,25 +63,34 @@ export const projects = [
       "REACT-CHARTS",
       "MILLIFY",
     ],
-    gif: "https://giphy.com/embed/kspkCGTdmm9X4XrKDG",
+    gif: crypto,
   },
   {
-    projectName: "Funky Monkey",
+    projectName: "E-Commerce Website",
     projectDesc:
-      "I created a Landing Site for my discord bot that I created with the Discord JS npm package. Using heroku I can host the discord bot, so I dont have to keep my computer running 24/7. This site has the link for that bot and lists of commands to help the user navigate the bot.",
+      "I wanted to improve my UI/UX skills and found a company whose products I really liked. I decided to undertake a project to create a modern version of their website. This project really challenged my creativity, as I wanted to create a website that was both unique and familiar to the company's existing customers. The most technically challenging part of the project was definitely the animations. There were some animations that I was particularly proud of because I created them from scratch. Overall, I enjoyed the process of redesigning this website and feel that it has helped me improve my UI/UX skills.",
     projectImg: Funk,
-    projectLive: "https://pedantic-mirzakhani-fa1507.netlify.app",
-    projectSource: "https://github.com/KevinRioscsc/funky_monkey_site",
-    technologies: ["Gatsby JS", "RESPONSIVE", "CSS", "HTML", "UI/UX"],
-    gif: "https://giphy.com/embed/JRzSfEgSMYogxBfeqA",
+    projectLive: "https://gleaming-kringle-d2145c.netlify.app",
+    projectSource: "https://github.com/KevinRioscsc/e-comm-site",
+    technologies: [
+      "REACT",
+      "API",
+      "HTML",
+      "Styled",
+      "CSS",
+      "GRID",
+      "FIGMA",
+      "UI/UX",
+    ],
+    gif: eCommerce,
   },
   {
-    projectName: "Genie",
+    projectName: "Game of Life Circuit",
     projectDesc:
-      "Genie, the spawn of Google, is a search engine that gives all the information in the world with a touch of button. Links, News, and Images of everything you want to search up. Using the Google API from RAPID API i was able to make a Google clone using the JSON data given from the API.",
+      "As a student, for my senior project, I decided to create a web application for Conway's Game of Life. The Game of Life is a cellular automaton simulation that was invented by the mathematician John Horton Conway in 1970. I wanted to use it as a circuit tool, to make it easier for people to experiment with creating different patterns and designs within the simulation.",
     projectImg: Genie,
-    projectLive: "https://genie-search.herokuapp.com",
-    projectSource: "https://github.com/KevinRioscsc/Genie-Search-Engine",
+    projectLive: "",
+    projectSource: "https://github.com/KevinRioscsc/Life-Computer",
     technologies: [
       "REACT",
       "RESPONSIVE",
@@ -87,7 +100,7 @@ export const projects = [
       "UI/UX",
       "RAPID API",
     ],
-    gif: "https://giphy.com/embed/3SR6QoX96VRW79dBSp",
+    gif: demo,
   },
   /*
     {
