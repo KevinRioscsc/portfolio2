@@ -3,6 +3,11 @@
   position: relative;
   min-height: 100%;
 }
+#app {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}
 .logo {
   display: inline-block;
 }

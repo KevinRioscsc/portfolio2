@@ -12,12 +12,6 @@ import Footer from "./Components/Footer";
 function App() {
   return (
     <BrowserRouter>
-      <div className="logo">
-        <Link to={"/"}>
-          <img src={logo} alt="logo" height={200} />
-        </Link>
-      </div>
-
       <NavBar />
       <SideBar />
       <Routes>
