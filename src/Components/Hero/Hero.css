@@ -240,3 +240,15 @@ a {
   right: 4rem;
   z-index: 1000;
 }
+@media screen and (max-width: 400px) {
+  .descr {
+    margin-top: 20px;
+    font-size: 16px;
+  }
+  .letter {
+    font-size: 44px;
+  }
+  .primary-header {
+    font-size: 44px;
+  }
+}
