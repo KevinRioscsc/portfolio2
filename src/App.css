@@ -90,6 +90,13 @@
   align-items: center;
   margin-top: 100px;
 }
+.projects {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
 @media screen and (max-width: 1230px) {
   .main {
     width: 85%;
@@ -121,5 +128,10 @@
 @media (min-width: 1900px) {
   .flex {
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width: 979px) {
+  .projects {
+    height: auto;
   }
 }

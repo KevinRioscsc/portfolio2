@@ -40,6 +40,7 @@ form {
   outline: none;
   background: transparent;
   border: 1px solid white;
+  color: white;
 }
 .btn {
   width: 100%;

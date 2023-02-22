@@ -5,8 +5,8 @@ import { projects } from "../../ProjectsData";
 const Projects = () => {
   return (
     <>
-      <div className="mainApp">
-        <div className="main proMain">
+      <div className="projects">
+        <div className="main ">
           <h2 className="second-header small ">Portfolio</h2>
           <sub className="secondary-sub small2">
             These are my favorite projects I've worked on for the past year.
