@@ -32,20 +32,20 @@ const ContactMe = () => {
           <form className="shadow5" ref={form} onSubmit={sendEmail}>
             <input
               placeholder="Name"
-              className="name"
+              className="name input"
               type="text"
               name="from_name"
             />
 
             <input
               placeholder="Email"
-              className="email2"
+              className="email2 input"
               type="email"
               name="email"
             />
 
             <textarea
-              className="message"
+              className="message "
               placeholder="Send Me a Message"
               name="message"
             />

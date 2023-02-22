@@ -1,184 +1,196 @@
-.form{
-    margin-top: 50px;
-    width: 50%;
+.form {
+  margin-top: 50px;
+  width: 50%;
 }
-form{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
-input{
-    font-family: inherit;
-    font-size: 20px;
-    padding: 0.5em;
-    outline: none;
-    background-color: white;
-    border: 0;
+input {
+  font-family: inherit;
+  font-size: 20px;
+  padding: 0.5em;
+  outline: none;
+  background-color: white;
+  border: 0;
 }
-.name{
-    width: 250px;
+form {
+  color: white;
 }
-.email2{
-    width: 250px;
+.name {
+  width: 250px;
 }
-.message{
-    font-family: inherit;
-    height: 150px;
-    font-size: 20px;
-    padding: 0.5em;
-    outline: none;
+.email2 {
+  width: 250px;
 }
-.btn{
-    width: 100%;
-    outline: 0;
-    background: transparent;
-    color: white;
-    transition: color 0.4s ease-in-out;
-    cursor: pointer;
+.input {
+  background: transparent;
+  border-bottom: 1px solid white;
+  color: white;
 }
-.btn:hover{
-    color: black;
+.input:focus {
+  border-bottom: 1px solid white;
 }
-.button{
-    width: 120px;
-    padding: 0;
-    cursor: pointer;
+.message {
+  font-family: inherit;
+  height: 150px;
+  font-size: 20px;
+  padding: 0.5em;
+  outline: none;
+  background: transparent;
+  border: 1px solid white;
+}
+.btn {
+  width: 100%;
+  outline: 0;
+  background: transparent;
+  color: white;
+  transition: color 0.4s ease-in-out;
+  cursor: pointer;
+}
+.btn:hover {
+  color: black;
+}
+.button {
+  width: 120px;
+  padding: 0;
+  cursor: pointer;
 }
 
 .button {
-    margin-top: 20px;
-    z-index: 1;
-    position: relative;
-    font-size: 1.5em;
-    font-family: inherit;
-    color: white;
-    
-    outline: none;
-    border: 1px solid white;
-    background: #18191f;
-    overflow: hidden;
-    transition: color 0.4s ease-in-out;
-  }
-  
-  .button::before {
-    content: '';
-    z-index: -1;
-    position: absolute;
-    top: 100%;
-    right: 100%;
-    width: 1em;
-    height: 1em;
-    border-radius: 50%;
-    background-color: white;
-    transform-origin: center;
-    transform: translate3d(50%, -50%, 0) scale3d(0, 0, 0);
-    transition: transform 0.45s ease-in-out;
-  }
-  
-  .button:hover {
-    cursor: pointer;
-    color: #161616;
-  }
-  
-  .button:hover::before {
-    transform: translate3d(50%, -50%, 0) scale3d(15, 15, 15);
-  }
-  @media screen and (max-width: 1000px) {
-      .form{
-          width: 80%;
-      }
-      .main{
-          width: 65%;
-      }
-  }
-  
-  @media screen and (max-width: 540px) {
-    .name{
-        width: 150px;
-    }
-    .small{
-        font-size: 45px;
-    }
-    .small2{
-        font-size: 19px;
-    }
-    .email2{
-        width: 150px;
-    }
-    .form{
-        width: 100%;
-    }
-    .main{
-        width: 55%;
-    }
-    .message{
-        width: 100%;
-    }
+  margin-top: 20px;
+  z-index: 1;
+  position: relative;
+  font-size: 1.5em;
+  font-family: inherit;
+  color: white;
+
+  outline: none;
+  border: 1px solid white;
+  background: #18191f;
+  overflow: hidden;
+  transition: color 0.4s ease-in-out;
 }
-@media screen and (max-width: 540px){
-    .proMain {
-        width: 65%;
-    }
+
+.button::before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 100%;
+  right: 100%;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  background-color: white;
+  transform-origin: center;
+  transform: translate3d(50%, -50%, 0) scale3d(0, 0, 0);
+  transition: transform 0.45s ease-in-out;
+}
+
+.button:hover {
+  cursor: pointer;
+  color: #161616;
+}
+
+.button:hover::before {
+  transform: translate3d(50%, -50%, 0) scale3d(15, 15, 15);
+}
+@media screen and (max-width: 1000px) {
+  .form {
+    width: 80%;
   }
-  /*Checkmark animation*/
-  .wrapper {
-    height:55vh ;
-    display: flex;
-    
-    align-items: center;
-   
+  .main {
+    width: 65%;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .name {
+    width: 150px;
+  }
+  .small {
+    font-size: 45px;
+  }
+  .small2 {
+    font-size: 19px;
+  }
+  .email2 {
+    width: 150px;
+  }
+  .form {
+    width: 100%;
+  }
+  .main {
+    width: 55%;
+  }
+  .message {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 540px) {
+  .proMain {
+    width: 65%;
+  }
+}
+/*Checkmark animation*/
+.wrapper {
+  height: 55vh;
+  display: flex;
+
+  align-items: center;
 }
 
 .checkmark__circle {
-    stroke-dasharray: 166;
-    stroke-dashoffset: 166;
-    stroke-width: 2;
-    stroke-miterlimit: 10;
-    stroke: #7ac142;
-    fill: none;
-    animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards
+  stroke-dasharray: 166;
+  stroke-dashoffset: 166;
+  stroke-width: 2;
+  stroke-miterlimit: 10;
+  stroke: #7ac142;
+  fill: none;
+  animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
 }
 
 .checkmark {
-    width: 56px;
-    height: 56px;
-    border-radius: 50%;
-    display: block;
-    stroke-width: 2;
-    stroke: #fff;
-    stroke-miterlimit: 10;
-    margin: 10% auto;
-    box-shadow: inset 0px 0px 0px #7ac142;
-    animation: fill .4s ease-in-out .4s forwards, scale .3s ease-in-out .9s both
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: block;
+  stroke-width: 2;
+  stroke: #fff;
+  stroke-miterlimit: 10;
+  margin: 10% auto;
+  box-shadow: inset 0px 0px 0px #7ac142;
+  animation: fill 0.4s ease-in-out 0.4s forwards,
+    scale 0.3s ease-in-out 0.9s both;
 }
 
 .checkmark__check {
-    transform-origin: 50% 50%;
-    stroke-dasharray: 48;
-    stroke-dashoffset: 48;
-    animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards
+  transform-origin: 50% 50%;
+  stroke-dasharray: 48;
+  stroke-dashoffset: 48;
+  animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards;
 }
 
 @keyframes stroke {
-    100% {
-        stroke-dashoffset: 0
-    }
+  100% {
+    stroke-dashoffset: 0;
+  }
 }
 
 @keyframes scale {
+  0%,
+  100% {
+    transform: none;
+  }
 
-    0%,
-    100% {
-        transform: none
-    }
-
-    50% {
-        transform: scale3d(1.1, 1.1, 1)
-    }
+  50% {
+    transform: scale3d(1.1, 1.1, 1);
+  }
 }
 
 @keyframes fill {
-    100% {
-        box-shadow: inset 0px 0px 0px 30px #7ac142
-    }
+  100% {
+    box-shadow: inset 0px 0px 0px 30px #7ac142;
+  }
 }
