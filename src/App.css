@@ -8,6 +8,26 @@
   align-items: center;
   height: 100vh;
 }
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #94a4b4 #ffffff;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 16px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #94a4b4;
+  border-radius: 10px;
+}
 .logo {
   display: inline-block;
 }
