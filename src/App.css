@@ -63,7 +63,12 @@
 .main {
   width: 80%;
   margin: 0 auto;
-  margin-bottom: 8rem;
+}
+.mainApp {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  margin-top: 100px;
 }
 @media screen and (max-width: 1230px) {
   .main {
